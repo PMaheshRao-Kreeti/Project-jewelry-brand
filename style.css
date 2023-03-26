@@ -36,7 +36,7 @@ hr{
 }
 
 .max-width{
-    max-width: 1400px;
+    max-width: 1300px;
     padding: 40px 80px;
     margin: auto ;
 }
@@ -49,7 +49,9 @@ hr{
 .about , .collection , .jewelry , .left , .right{
     margin: 10px;
 }
-
+.jewelry .pic{
+    transform: scale(0.9, 0.9);
+}
 /* header section style */
 
 /* comapany logo style */
@@ -73,7 +75,7 @@ header #logo img{
 .navbar{
     border-top: 2px solid var(--navborder-color);
     border-bottom: 2px solid var(--navborder-color);
-    padding: 1.5rem 0;
+    padding: 1.2rem 0;
     width: 100vw;
 }
 
@@ -100,7 +102,7 @@ header #logo img{
 }
 
 .navbar .nav-item .nav-btn{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color:var(--pure);
 }
 
@@ -112,7 +114,7 @@ header #logo img{
 
 .home #banner{
     width: 100vw;   
-    /* height: 80%; */
+     height: 70vh; 
     margin-bottom: 1rem ;
 
 }
@@ -178,20 +180,20 @@ header #logo img{
     flex-wrap: wrap;
 }
 
-.more-commen{
+.more-info .commen{
     text-align: center;
 }
 
-.more-info .left{
-    font-size: 1.2rem;
-    flex: 1 1 700px;
+.more-info .left-container{
+    font-size: 1.125rem;
+    flex: 1 1 570px;
     line-height: 1.8;
     text-align: justify;
 
 }
 
-.more-info .right{
-    flex: 1 1 300px;
+.more-info .right-container{
+    flex: 1 1 270px;
     
 }
 
@@ -214,7 +216,7 @@ footer{
 }
 
 .sub-menu li a{
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: var(--pure);
     margin: 0 1vw;
 }   
@@ -256,9 +258,6 @@ footer .copyright p span{
         padding: 40px;
         margin: auto ;
     }
-    .navbar{
-        padding: 1rem 0;
-    }  
 }
 
 /* Tablet view */
@@ -271,13 +270,14 @@ footer .copyright p span{
         margin: auto ;
     }
     
-    .navbar{
-        padding: 1.2rem 0;
-    }
 }
 
 /* mobile view */
 @media only screen and (max-width:720px) {
+    /* banner cover */
+    .home #banner{
+        height: 60vh;
+    }
 
     /* section max width */
 
@@ -288,7 +288,7 @@ footer .copyright p span{
 
     /* navbar toggle btn css*/
     .navbar{
-     padding: 1rem 0;
+     padding: 1.5rem 0;
      border-top: none;   
     }
     
@@ -305,19 +305,17 @@ footer .copyright p span{
         height: 1.5rem;
         width: 1.5rem;
         opacity: 0;
-
         display: block;
         position: absolute;
         left: 1rem;
-        top: 5.0rem;
-
+        top: 5.5rem;
         z-index: 2;
     }
     #toggle-btn-img{
         display: block;
         position: absolute;
         left: 1rem;
-        top: 5.0rem;
+        top: 5.5rem;
     }
     
     #toggle:checked ~ .nav-container{
@@ -329,6 +327,30 @@ footer .copyright p span{
 
 
 /* mobile view */
-@media only screen and (max-width:500px){
+@media only screen and (max-width:510px){
+    
+    /* banner cover */
+    .home #banner{
+        height: 50vh;
+    }
+
+}
+
+/* mobile view */
+@media only screen and (max-width:430px){
+    
+    /* banner cover */
+    .home #banner{
+        height: 40vh;
+    }
+
+}
+
+@media only screen and (max-width:320px){
+    
+    /* banner cover */
+    .home #banner{
+        height: 30vh;
+    }
 
 }
