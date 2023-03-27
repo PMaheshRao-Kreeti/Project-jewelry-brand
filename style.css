@@ -112,11 +112,12 @@ header #logo img{
 
 /* cover image */
 
-.home #banner{
-    width: 100vw;   
-     height: 70vh; 
-    margin-bottom: 1rem ;
 
+.home #banner {
+    width: 100vw;   
+     height: 90vh;
+    margin-bottom: 1rem ;
+   
 }
 
 /* combine section */
@@ -331,7 +332,7 @@ footer .copyright p span{
     
     /* banner cover */
     .home #banner{
-        height: 50vh;
+        height: 60vh;
     }
 
 }
@@ -341,16 +342,7 @@ footer .copyright p span{
     
     /* banner cover */
     .home #banner{
-        height: 40vh;
-    }
-
-}
-
-@media only screen and (max-width:320px){
-    
-    /* banner cover */
-    .home #banner{
-        height: 30vh;
+        height: 50vh;
     }
 
 }
