@@ -43,9 +43,15 @@ hr{
 
 .title{
     font-weight: 500;
-    font-size: 2.4rem;
+    font-size: 2.3rem;
 }
+.para{
+    font-size:1.2rem;
 
+}
+.more-para{
+    font-size: 1.4rem;
+}
 .about , .collection , .jewelry , .left , .right{
     margin: 10px;
 }
@@ -102,7 +108,7 @@ header #logo img{
 }
 
 .navbar .nav-item .nav-btn{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color:var(--pure);
 }
 
@@ -114,9 +120,13 @@ header #logo img{
 
 
 .home #banner {
-    width: 100vw;   
-     height: 95vh;
-    margin-bottom: 1rem ;
+    width: 100%;   
+     height: 100%;
+     max-height: 75vh;
+     /* min-height : 50vh; */
+    /* margin-bottom: 1rem ; */
+    /* object-fit: cover;    */
+
    
 }
 
@@ -138,7 +148,6 @@ header #logo img{
 
 .combine .para{
     margin-bottom: 1rem;
-    font-size: 1rem;
     max-height: 270px;
     overflow-y: hidden;
 }
@@ -185,8 +194,7 @@ header #logo img{
     text-align: center;
 }
 
-.more-info .left-container{
-    font-size: 1.125rem;
+.more-info .more-para{
     flex: 1 1 570px;
     line-height: 1.8;
     text-align: justify;
@@ -239,9 +247,28 @@ footer .copyright p span{
 
 
 /* Big screen view */
+@media only screen and (max-width:1400px){
 
+    .navbar .nav-item .nav-btn{
+        font-size: 1.2rem;
+    }
+    .title{
+        font-size:2rem ;
+    }
+    
+    .para{
+        font-size:1rem ;
+    }
+    
+    .more-para{
+        font-size:1.125rem ;
+    }
+}
 @media only screen and (max-width:1300px) {
-/* section max width */
+
+/* commen CSS */
+
+    /* section max width */
 
     .max-width{
         max-width: 1400px;
@@ -252,6 +279,31 @@ footer .copyright p span{
 
 /* Laptop view */
 @media only screen and (max-width:1024px) {
+
+    .title{
+        font-size:2rem;
+    }
+    
+    .para{
+        font-size:1rem;
+    }
+    
+    .more-para{
+        font-size:1.125rem ;
+    }
+    
+    /* section max width */
+
+    .max-width{
+        max-width: 1400px;
+        padding: 40px 50px;
+        margin: auto ;
+    }
+}
+
+/* Tablet view */
+@media only screen and (max-width:900px) {
+
     /* section max width */
 
     .max-width{
@@ -259,31 +311,17 @@ footer .copyright p span{
         padding: 40px;
         margin: auto ;
     }
-}
-
-/* Tablet view */
-@media only screen and (max-width:900px) {
-    /* section max width */
-
-    .max-width{
-        max-width: 1400px;
-        padding: 40px 20px;
-        margin: auto ;
-    }
     
 }
 
 /* mobile view */
 @media only screen and (max-width:720px) {
-    /* banner cover */
-    .home #banner{
-        height: 60vh;
-    }
+    /* commen CSS */
 
     /* section max width */
 
     .max-width{
-        padding: 40px 10px;
+        padding: 40px 30px;
         /* margin: auto ; */
     }
 
@@ -330,19 +368,10 @@ footer .copyright p span{
 /* mobile view */
 @media only screen and (max-width:510px){
     
-    /* banner cover */
-    .home #banner{
-        height: 60vh;
+    .max-width{
+        padding: 40px 20px;
+        /* margin: auto ; */
     }
 
 }
 
-/* mobile view */
-@media only screen and (max-width:430px){
-    
-    /* banner cover */
-    .home #banner{
-        height: 50vh;
-    }
-
-}
