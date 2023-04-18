@@ -119,12 +119,12 @@ header #logo img {
   border-right: none;
 }
 
-.navbar .nav-item .nav-btn {
+.navbar .nav-item a {
   font-size: 1.5rem;
   color: var(--pure);
 }
 
-.navbar .nav-item .nav-btn:hover {
+.navbar .nav-item a:hover {
   color: var(--text-color);
 }
 
@@ -248,7 +248,7 @@ footer .copyright p span {
 
 /* Big screen view */
 @media only screen and (max-width: 1400px) {
-  .navbar .nav-item .nav-btn {
+  .navbar .nav-item a {
     font-size: 1.2rem;
   }
 
