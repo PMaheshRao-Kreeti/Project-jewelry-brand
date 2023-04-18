@@ -17,10 +17,14 @@
   text-decoration: none;
 }
 
+html{
+  overflow-x: hidden;
+  margin: 0;
+}
+
 body {
   color: var(--text-color);
   background-color: var(--dark);
-  overflow-x: hidden;
 }
 
 hr {
@@ -209,6 +213,7 @@ header #logo img {
 
 footer {
   margin-top: 1rem;
+  padding-bottom: 0.3rem;
   background-color: #0b0b0b;
 }
 
@@ -234,7 +239,7 @@ footer {
 
 footer .copyright {
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: 0.7rem;
 }
 
 footer .copyright p span {
