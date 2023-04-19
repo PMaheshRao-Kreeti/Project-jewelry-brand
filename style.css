@@ -17,10 +17,6 @@
   text-decoration: none;
 }
 
-html{
-  overflow-x: hidden;
-  margin: 0;
-}
 
 body {
   color: var(--text-color);
@@ -31,10 +27,12 @@ hr {
   height: 4px;
   border-top: 1px solid var(--text-color);
   border-bottom: 1px solid var(--text-color);
+  border-right: none;
+  border-left: none;
 }
 
 .max-width {
-  max-width: 1300px;
+  max-width: 1530px;
   padding: 40px 80px;
   margin: auto;
 }
@@ -44,28 +42,30 @@ hr {
   margin: 0 auto;
 }
 
+/* text commen css */
+
 .title {
   font-weight: 500;
   font-size: 2.2rem;
 }
 
-.para {
+.title-ptrn-img{
+  text-align: center;
+}
+
+.combine-content-text {
   font-size: 1.1rem;
 }
 
-.more-para {
-  font-size: 1.3rem;
+.contact-content-text {
+  font-size: 1.23rem;
 }
 
-.about,
-.collection,
-.jewelry,
-.left,
-.right {
+.combine-child {
   margin: 10px;
 }
 
-.jewelry .pic {
+.jewelry .jewelry-picture {
   transform: scale(0.9, 0.9);
 }
 
@@ -74,7 +74,7 @@ hr {
 /* comapany logo style */
 
 header {
-  margin: 1rem 0;
+  padding: 1rem 0;
 }
 
 header #logo {
@@ -87,17 +87,17 @@ header #logo img {
   cursor: pointer;
 }
 
-/* navbar */
+/* navbar css*/
 
 .navbar {
   border-top: 2px solid var(--navborder-color);
   border-bottom: 2px solid var(--navborder-color);
   padding: 1.2rem 0;
-  width: 100vw;
+  width: 100%;
 }
 
-#toggle,
-#toggle-btn-img {
+.navbar #toggle,
+.navbar #toggle-btn-img {
   display: none;
 }
 
@@ -105,7 +105,6 @@ header #logo img {
   display: flex;
   justify-content: space-around;
   align-items: stretch;
-  gap: 0;
 }
 
 .navbar .nav-item {
@@ -128,32 +127,35 @@ header #logo img {
   color: var(--text-color);
 }
 
-/* cover image */
+/* home section cover image css*/
 
-.home #banner {
-  width: 100%;
-  height: 100%;
-  max-height: 75vh;
+.home {
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
-/* combine section */
+.home #home-banner {
+  width: 100%;
+  height: 100%;
+  max-height: 70vh;
+}
 
-.flex-combine {
+/* combine section css */
+
+.combine-flex {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.about,
-.collection,
-.jewelry {
+.combine-child {
   text-align: center;
   line-height: 2;
   flex: 1 1 300px;
 }
 
-.combine .para {
+.combine .combine-content-text {
   margin-bottom: 1rem;
   max-height: 270px;
   overflow-y: hidden;
@@ -161,7 +163,7 @@ header #logo img {
 
 /* read-more btn css */
 
-.myButton {
+.combine .combine-child .btn .read-more-btn {
   background: linear-gradient(to bottom, #ffffff 5%, #eae0c2 100%);
   background-color: #ffffff;
   border-radius: 0.94rem;
@@ -176,40 +178,40 @@ header #logo img {
   text-decoration: none;
 }
 
-.myButton:hover {
+.combine .combine-child .btn .read-more-btn:hover {
   background: linear-gradient(to bottom, #eae0c2 5%, #ffffff 100%);
   background-color: #eae0c2;
 }
 
-.myButton:active {
+.combine .combine-child .btn .read-more-btn:active {
   position: relative;
   top: 1px;
 }
 
-/* more information */
+/* contact section css */
 
-.flex-more {
+.contact-flex {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.more-info .commen {
+.contact .contact-child {
   text-align: center;
 }
 
-.more-info .more-para {
+.contact .contact-content-text {
   flex: 1 1 570px;
   line-height: 1.8;
   text-align: justify;
 }
 
-.more-info .right-container {
+.contact .contact-img {
   flex: 1 1 270px;
 }
 
-/* footer section */
+/* footer section css */
 
 footer {
   margin-top: 1rem;
@@ -217,32 +219,29 @@ footer {
   background-color: #0b0b0b;
 }
 
-.footer-container {
+.footer-sub-menu {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.sub-menu li {
   list-style: none;
 }
 
-.sub-menu li a {
+.footer-sub-menu li a {
   font-size: 1rem;
   color: var(--text-color);
   margin: 0 1vw;
 }
 
-.sub-menu li a:hover {
+.footer-sub-menu li a:hover {
   color: var(--pure);
 }
 
-footer .copyright {
+footer .footer-copyright {
   text-align: center;
   margin-top: 0.7rem;
 }
 
-footer .copyright p span {
+footer .footer-copyright p span {
   color: var(--pure);
 }
 
@@ -256,19 +255,17 @@ footer .copyright p span {
     font-size: 2rem;
   }
 
-  .para {
+  .combine-content-text {
     font-size: 1rem;
   }
 
-  .more-para {
+  .contact-content-text {
     font-size: 1.125rem;
   }
 }
 
 @media only screen and (max-width: 1300px) {
   /* commen CSS */
-
-  /* section max width */
   .max-width {
     max-width: 1400px;
     padding: 40px 60px;
@@ -278,19 +275,7 @@ footer .copyright p span {
 
 /* Laptop view */
 @media only screen and (max-width: 1024px) {
-  .title {
-    font-size: 2rem;
-  }
-
-  .para {
-    font-size: 1rem;
-  }
-
-  .more-para {
-    font-size: 1.125rem;
-  }
-
-  /* section max width */
+  /* commen CSS */
 
   .max-width {
     max-width: 1400px;
@@ -301,7 +286,7 @@ footer .copyright p span {
 
 /* Tablet view */
 @media only screen and (max-width: 900px) {
-  /* section max width */
+  /* commen CSS */
   .max-width {
     max-width: 1400px;
     padding: 40px;
@@ -312,8 +297,6 @@ footer .copyright p span {
 /* mobile view */
 @media only screen and (max-width: 720px) {
   /* commen CSS */
-
-  /* section max width */
   .max-width {
     padding: 40px 30px;
   }
@@ -330,10 +313,10 @@ footer .copyright p span {
 
   .navbar .nav-item {
     border: none;
-    line-height: 1.5;
+    line-height: 1.7;
   }
 
-  #toggle {
+  .navbar #toggle {
     height: 1.5rem;
     width: 1.5rem;
     opacity: 0;
@@ -344,14 +327,14 @@ footer .copyright p span {
     z-index: 2;
   }
 
-  #toggle-btn-img {
+  .navbar #toggle-btn-img {
     display: block;
     position: absolute;
     left: 1rem;
     top: 5.5rem;
   }
 
-  #toggle:checked ~ .nav-container {
+  .navbar #toggle:checked ~ .nav-container {
     display: flex;
     flex-direction: column;
     align-items: center;

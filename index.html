@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Jewelery Brand</title>
   </head>
-  <body>
-        <!-- Logo + Navigation bar of Website -->
+  <body><!-- Logo + Navigation bar of Website -->
 
     <header>
       <!-- logo of website -->
@@ -21,15 +20,13 @@
 
       <nav class="navbar">
         <input type="checkbox" name="toggle" id="toggle" >
-        <img src="assets/mob-menu.png" alt="" id="toggle-btn-img" >
-
+        <img src="assets/mob-menu.png" alt="toggle button img" id="toggle-btn-img" >
         <ul class="nav-container nav-max-width">
           <li class="nav-item"><a href="#home">Home</a></li>
           <li class="nav-item"><a href="#about">About</a></li>
           <li class="nav-item"><a href="#jewelry">Jewelry</a></li>
           <li class="nav-item"><a href="#collection">Collections</a></li>
-          <li class="nav-item"><a href="#contact">Contact</a>
-          </li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -37,22 +34,22 @@
     <!-- home Wallpaper -->
 
     <div class="home" id="home">
-      <img id="banner" src="assets/banner.jpg" alt="Home Wallpaper" >
+      <img id="home-banner" src="assets/banner.jpg" alt="Home Wallpaper" >
     </div>
 
     <!-- About + Jewelry + Collection code -->
 
-    <section class="combine flex-combine max-width">
+    <section class="combine combine-flex max-width">
       <!-- About section code-->
 
-      <div class="about" id="about">
+      <div class="about combine-child" id="about">
         <h1 class="title">WELCOME</h1>
 
-        <div class="ptrn">
+        <div class="title-ptrn-img">
           <img src="assets/pattern.png" alt=" Pattern " >
         </div>
 
-        <div class="para">
+        <div class="combine-content-text">
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
             temporibus sunt reiciendis quis. Enim magni porro quibusdam maiores
@@ -67,32 +64,32 @@
         </div>
 
         <div class="btn">
-          <a href="#" class="myButton">Read more</a>
+          <a href="#" class="read-more-btn">Read more</a>
         </div>
       </div>
 
       <!-- Jewelry image -->
 
-      <div class="jewelry" id="jewelry">
-        <img src="assets/pic.png" alt="" class="pic" >
+      <div class="jewelry combine-child" id="jewelry">
+        <img src="assets/pic.png" alt="Jewelry picture" class="jewelry-picture" >
 
         <h1 class="title">Latest Collection</h1>
 
-        <div class="ptrn">
+        <div class="title-ptrn-img">
           <img src="assets/pattern.png" alt=" Pattern " >
         </div>
       </div>
 
       <!--Collection section code -->
 
-      <div class="collection" id="collection">
+      <div class="collection combine-child" id="collection">
         <h1 class="title">OUR HISTORY</h1>
 
-        <div class="ptrn">
+        <div class="title-ptrn-img">
           <img src="assets/pattern.png" alt=" Pattern " >
         </div>
 
-        <div class="para">
+        <div class="combine-content-text">
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
             temporibus sunt reiciendis quis. Enim magni porro quibusdam maiores
@@ -107,15 +104,15 @@
         </div>
 
         <div class="btn">
-          <a href="#" class="myButton">Read more</a>
+          <a href="#" class="read-more-btn">Read more</a>
         </div>
       </div>
     </section>
 
     <!-- More information section -->
 
-    <section class="more-info flex-more max-width" id="contact">
-      <div class="left-container commen more-para">
+    <section class="contact contact-flex max-width" id="contact">
+      <div class="contact-content-text contact-child">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
           corrupti provident soluta eius. Incidunt unde rerum minima blanditiis
@@ -134,12 +131,12 @@
         </p>
       </div>
 
-      <div class="right-container commen">
+      <div class="contact-img contact-child">
         <div class="jewelry">
-          <img src="assets/pic.png" alt="" class="pic" >
+          <img src="assets/pic.png" alt="Jewelry picture" class="jewelry-picture" >
           <h1 class="title" id="title">Latest Collection</h1>
 
-          <div class="ptrn">
+          <div class="title-ptrn-img">
             <img src="assets/pattern.png" alt=" Pattern " >
           </div>
         </div>
@@ -151,7 +148,7 @@
     <!-- Footer setion -->
 
     <footer>
-      <ul class="sub-menu footer-container">
+      <ul class="footer-sub-menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#jewelry">Jewelry</a></li>
@@ -159,7 +156,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <div class="copyright">
+      <div class="footer-copyright">
         <p><span>Copyright </span>JewelleryBrand<span> 2019 </span></p>
       </div>
     </footer>
