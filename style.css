@@ -83,11 +83,11 @@ header {
   padding: 1rem 0;
 }
 
-header #logo {
+header .logo {
   margin-bottom: 0.5rem;
 }
 
-header #logo img {
+header .logo img {
   display: block;
   margin: 0 auto;
   cursor: pointer;
@@ -157,8 +157,6 @@ header #logo img {
 
 .combine .combine-content-text {
   margin-bottom: 1rem;
-  max-height: 270px;
-  overflow-y: hidden;
 }
 
 /* read-more btn css */
